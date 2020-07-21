@@ -1,32 +1,27 @@
+:root {
+  --primaryColor: blue;
+  --cl-secondary: red;
+  --mainTransition: all 2s linear;
+  --mainSpacing: 3px;
+}
+h1 {
+  color: var(--primaryColor);
+}
+h2 {
+  color: var(--primaryColor);
+}
+h3 {
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+p {
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  color: var(--cl-secondary);
+}
 div {
-  width: 200px;
-  height: 100px;
-  color: white;
-  margin: 10px;
-  opacity: 0;
+  --primaryPurple: purple;
 }
-.animation {
-  background: crimson;
-  animation: move 5s 2;
-}
-
-@keyframes move {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    transform: translateX(500px);
-    opacity: 0.25;
-  }
-  50% {
-    transform: translateX(-100x);
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    transform: translateX(20px);
-    opacity: 1;
-  }
+.main-text {
+  color: var(--primaryPurple);
 }
