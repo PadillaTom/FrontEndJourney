@@ -1,29 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background: purple;
 }
-div {
-  min-height: 100vh;
+.banner {
+  background: salmon;
+}
+h1 {
   color: white;
-  border: 2px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
-.big-img {
-  background: url("./Images/lava-656827_1280.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@media screen and (min-width: 576px) {
+  body {
+    background: red;
+  }
+  .banner {
+    background: yellow;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
 }
-.small-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./Images/night-3078326_640.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: green;
+  }
+  .banner {
+    background: wheat;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
 }
