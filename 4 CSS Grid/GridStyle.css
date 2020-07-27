@@ -39,14 +39,27 @@ body {
 /* Grid Styles  */
 .container {
   display: grid;
-  grid-template-columns: [start] 100px 100px [line-3] 100px [end];
-  grid-template-rows: [start] 100px 100px 100px [end];
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c c b"
+    "d d d "
+    "e f f";
 }
 .cell-1 {
-  grid-column: start/line-3;
-  grid-row: start/end;
+  grid-area: a;
+}
+.cell-2 {
+  grid-area: b;
+}
+.cell-3 {
+  grid-area: c;
 }
 .cell-4 {
-  grid-column: 1/-1;
+  grid-area: d;
+}
+.cell-5 {
+  grid-area: e;
 }
