@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+}
+.container {
+  border: 5px solid red;
+}
+.cell {
+  text-align: center;
+  background: #dedede;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem;
+  border: 1px solid green;
+  color: #fff;
+}
+.cell-1 {
+  background: #581f18;
+}
+.cell-2 {
+  background: #f0a202;
+}
+.cell-3 {
+  background: #d95d39;
+}
+.cell-4 {
+  background: #202c59;
+}
+.cell-5 {
+  background: #51cb20;
+}
+/* End of Generales */
+
+/* Grid Styles  */
+.container {
+  display: grid;
+  grid-template-columns: [start] 100px 100px [line-3] 100px [end];
+  grid-template-rows: [start] 100px 100px 100px [end];
+  gap: 1rem;
+}
+.cell-1 {
+  grid-column: start/line-3;
+  grid-row: start/end;
+}
+.cell-4 {
+  grid-column: 1/-1;
+}
