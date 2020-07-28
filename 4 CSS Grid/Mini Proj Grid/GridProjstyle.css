@@ -163,18 +163,40 @@ p {
   color: var(--primaryColor);
 }
 /*WITH QUERY*/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     /*Column Layout y espacio*/
-  }
+/*}
   @media screen and (min-width: 1170px) {
     .cards-center {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-}
+} */
+
 /* Without Query */
+
+/*Hacemos las cuentas para PX de cada Col = 368px*/
+/* .cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+} */
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+}
+
+/*We have a bigger description in one card*/
+.card {
+  display: grid;
+  grid-template-columns: 1fr; /*Aclaramos que cada tarjeta tenga 1 sola columna*/
+  grid-template-rows: auto 1fr auto; /* img, info, footer*/
+}
+
 /* End Cards Section */
