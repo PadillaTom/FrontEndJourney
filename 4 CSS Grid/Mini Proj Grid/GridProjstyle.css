@@ -1,0 +1,136 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Variables */
+:root {
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
+  margin: 3rem;
+  transition: var(--mainTransition);
+}
+.btn:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}
+
+/* NavBar Mobile */
+.main-navbar {
+  background: var(--darkGrey);
+  padding: 0 2rem;
+}
+.main-navbar li {
+  list-style: none;
+}
+.main-navbar a {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0;
+  color: var(--primaryColor);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.main-navbar a:hover {
+  color: var(--mainBlack);
+}
+@media screen and (min-width: 992px) {
+  .main-navbar ul {
+    max-width: 1170px; /*No superara dicho width*/
+    margin: 0 auto; /*Centramos la lista al medio Horizontal*/
+    background: var(--mainBlack);
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /*Separamos la pantalla en 4fr, pero el contenido de cada FR no esta centrado*/
+  }
+  .main-navbar a {
+    text-align: center; /*Centramos el texto en el element*/
+  }
+}
+/* End NavBar */
+
+/* Hero Section */
+.hero-header {
+  min-height: 100vh; /*ocupe toda la screen*/
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  display: grid;
+  justify-content: center; /*centrado horizontal a la CHILD*/
+  align-items: center; /* centrado vertical Child - Falta centrar content*/
+}
+.hero-banner {
+  /* background: blue; para verlo al editarlo, luego lo removemos */
+  /* text-align: center; Centramos el Content, si necesario. Aqui queremos todo al left side. */
+}
+.hero-banner p {
+  width: 80%;
+  max-width: 560px; /*estiramiento maximo*/
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 1rem;
+    /*Caudno supere 600px, se aleja el text del borde*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(241, 80, 37, 075), rgba(0, 0, 0, 0.75)),
+      url("./images/image-2.jpeg") center/cover no-repeat fixed;
+    /*imagen de fondo y ung radient*/
+  }
+}
+/* End Hero Section */
+
+/* Cards Section */
+
+/* End Cards Section */
