@@ -38,15 +38,7 @@ body {
 
 /* Grid Styles  */
 .container {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: [start] 100px 100px [line-3] 100px [end];
-  grid-template-rows: [start] 100px 100px 100px [end];
-  gap: 1rem;
-}
-.cell-1 {
-  grid-column: start/line-3;
-  grid-row: start/end;
-}
-.cell-4 {
-  grid-column: 1/-1;
+  grid-template-columns: repeat(auto-fit, 100px);
 }
