@@ -1,0 +1,16 @@
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: ccontain;
+  display: block;
+}
+.one {
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+}
+.two {
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+}
