@@ -132,5 +132,34 @@ p {
 /* End Hero Section */
 
 /* Cards Section */
-
+.title {
+  text-align: center;
+}
+.cards {
+  padding: 4rem 0;
+}
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  /*Hasta aqui dimos tamaño a la page y centramos las cards*/
+}
+.card {
+  border: 1px solid var(--darkGrey);
+  margin-bottom: 3rem;
+}
+.card-info {
+  padding: 1rem;
+}
+.card-footer {
+  background: var(--darkGrey);
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  /*Separamos en 4 cols y centramos contenido*/
+}
+.card-footer span {
+  color: var(--primaryColor);
+}
 /* End Cards Section */
