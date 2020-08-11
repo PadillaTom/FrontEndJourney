@@ -17,7 +17,7 @@ Getting used to work in an organized way. Mostly paying attention to HTML and CS
 Using Comments both Single and Multiline to have an organized environment.
 First time using CSS Variables.
 
-Take a Look!
+Take a Look!\
 Code: https://github.com/PadillaTom/P1-Beer-Good \
 Website: https://p1-beergood-noflexgrid.netlify.app/
 
@@ -25,7 +25,7 @@ Website: https://p1-beergood-noflexgrid.netlify.app/
 Again trying to have a semantic HTML and a well orgenized CSS. This time i am applyig **FLEXBOX**.
 Inspired by this beatuiful country I chose some of the best images!
 
-Take a Look -->
+Take a Look -->\
 Code: https://github.com/PadillaTom/P2-Discover-Swiss \
 Website: https://p2-discover-flexonly.netlify.app/
 
