@@ -10,15 +10,22 @@ You will see my progress and practices.
 
 
 ### Projects
-Through ####P1 to ####P6 i will be practicing all my knowledge.
+Through **P1** to **P6** i will be practicing all my knowledge.
 
-P1: Beer Good!
+**P1: Beer Good!**
 Getting used to work in an organized way. Mostly paying attention to HTML and CSS Positioning. Learnt some useful information about Media Queries.
 Using Comments both Single and Multiline to have an organized environment.
 First time using CSS Variables.
 
 Take a Look!
-Code: https://github.com/PadillaTom/P1-Beer-Good
+Code: https://github.com/PadillaTom/P1-Beer-Good \
 Website: https://p1-beergood-noflexgrid.netlify.app/
 
-P2: Discover Swiss!  (Flexbox Only)
+**P2: Discover Swiss!  (Flexbox Only)**
+Again trying to have a semantic HTML and a well orgenized CSS. This time i am applyig **FLEXBOX**.
+Inspired by this beatuiful country I chose some of the best images!
+
+Take a Look -->
+Code: https://github.com/PadillaTom/P2-Discover-Swiss \
+Website: https://p2-discover-flexonly.netlify.app/
+
