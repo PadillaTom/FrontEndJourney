@@ -36,5 +36,6 @@ Take a Look -->\
 Code: https://github.com/PadillaTom/P3-Portfolio-Test1 \
 Website: https://p3-testportfolio.netlify.app/
 
-\\\
+
+
 **From here P4 to P6 are just my practices to finally comprehend all this new knowledge. Always having fun!**
